@@ -111,6 +111,37 @@ nav > ul > li > a:hover {
   margin-top: 10px;
   height: fit-content;
 }
+.main-sec-tree-container {
+  margin-top: 25px;
+  height: fit-content;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-sec-tree-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-sec-tree-cards > div {
+  width: 100%;
+}
+.main-sec-tree-cards > div > img { 
+  filter: grayscale(1.5);
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: #555 5px 5px 20px;
+}
+.sec-one-left > img {
+  filter: grayscale(1.5);
+}
+.main-sec-tree-card-1 {
+  text-align: start;
+}
+.main-sec-tree-card-2 {
+  text-align: center;
+}
+.main-sec-tree-card-3 {
+  text-align: end;
+}
 .small-container {
   width: 60%;
   margin: 0 auto;
@@ -137,6 +168,8 @@ nav > ul > li > a:hover {
 }
 .sec-one-left > img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px #55555555;
 }
 .services,
 .tweets {
@@ -193,9 +226,9 @@ nav > ul > li > a:hover {
   margin-top: 10px;
 }
 .footer-container {
-  height: 50vh;
+  height: fit-content;
   margin-top: 50px;
-  background: linear-gradient(#d5f5f744, #00cfd6a4);
+  background: linear-gradient(#d5f5f70c, #00cfd6a4);
   border-top-left-radius: 100px;
 }
 .footer-logo {
@@ -212,7 +245,16 @@ nav > ul > li > a:hover {
   justify-content: space-around;
 }
 .footer-bet-col {
-  width: 30%;
+  width: 20%;
+}
+.footer-copyright {
+  color: #555555;
+  width: 100%;
+  text-align: center;
+}
+
+.col-footer-6 {
+  width: 40%;
 }
 .footer-nav {
   position: relative;
@@ -231,17 +273,32 @@ nav > ul > li > a:hover {
 .footer-nav > ul > li > a:hover {
   color: #555;
 }
-.footer-copyright {
-  position: absolute;
-  top: 95%;
-  text-align: center;
-  margin-top: 10px;
-  color: #555;
+@media only screen and (max-width: 480px) {
+  .footer-nav > ul > li > a {
+    text-decoration: none;
+    color: #555555;
+    display: flex;
+    justify-content: space-between;
+    transition: .4s all;
+    font-size: 13px;
+  }
+  .footer-bet-col {
+    width: 0%;
+  }
+  .col-footer-6 {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 720px) {
   .top-container-title {
     font-size: 50px;
     margin-top: -180px;
+  }
+  .main-sec-tree-cards > div > img {
+    width: 100%;
+  }
+  .main-sec-tree-card-1,.main-sec-tree-card-2,.main-sec-tree-card-3 {
+    text-align: center;
   }
   .tweet-card {
     width: 100%;
@@ -249,6 +306,9 @@ nav > ul > li > a:hover {
   }
   .top-container-p {
     font-size: 14px;
+  }
+  .footer-copyright {
+    padding-top: 10px;
   }
   .nav-container {
     background: #1ef8ffde;
@@ -263,4 +323,8 @@ nav > ul > li > a:hover {
   .sec-one-right {
     width: 100%;
   }
+  .footer-nav > ul > li > a {
+    margin: 10px 0;
+  }
 }
+

@@ -15,15 +15,16 @@ const Footer = () => {
                     <li><a href="#">Services <i className="gg-browser"></i></a></li>
                     <li><a href="#">Reservation <i className="gg-browse"></i></a></li>
                 </ul>
-                <div className="footer-bet-col"></div>
+                <div className="footer-bet-col">
+                    
+                </div>
                 <ul className="col-footer-6">
                     <li><a href="#">About <i className="gg-info"></i></a></li>
                     <li><a href="#">Support <i className="gg-headset"></i></a></li>
                     <li><a href="#"> Contact  <i className="gg-instagram"></i></a></li>
                 </ul>
-                <div className="footer-copyright">	&copy; Mobin Haghverdi</div>
             </div>
-
+            <div className="footer-copyright">	&copy; Mobin Haghverdi</div>
         </div>
     );
 }
